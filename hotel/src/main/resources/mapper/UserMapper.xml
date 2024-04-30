@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.each.hotel.mapper.UserMapper">
+
+<!--    <resultMap id="userVo" type="com.each.book.vo.UserVo">-->
+<!--        <id property="id" column="id"></id>-->
+<!--        <result column="name" property="name"></result>-->
+<!--        <result column="nickname" property="nickname"></result>-->
+<!--        <result column="avatar" property="avatar"></result>-->
+<!--        <result column="pwd" property="pwd"></result>-->
+<!--        <result column="id_card_num" property="idCardNum"></result>-->
+<!--        <result column="sex" property="sex"></result>-->
+<!--        <result column="birthday" property="birthday"></result>-->
+<!--        <result column="creation_time" property="createTime"></result>-->
+<!--        <result column="update_time" property="updateTime"></result>-->
+<!--        <collection property="roles" ofType="com.each.book.entity.Role">-->
+<!--            <id property="id" column="rid"></id>-->
+<!--            <result column="rname" property="name"></result>-->
+<!--            <result column="rdescription" property="description"></result>-->
+<!--            <result column="rcreationTime" property="creationTime"></result>-->
+<!--            <result column="rupdateTime" property="updateTime"></result>-->
+<!--        </collection>-->
+<!--    </resultMap>-->
+
+
+<!--    <select id="getUserPageList" resultMap="userVo">-->
+<!--        SELECT a.*,-->
+<!--               b.*,-->
+<!--               c.id          as rid,-->
+<!--               c.name          as rname,-->
+<!--               c.description   as rdescription,-->
+<!--               c.creation_time as rcreationTime,-->
+<!--               c.update_time   as rupdateTime-->
+<!--        FROM `user` a-->
+<!--                 LEFT JOIN user_role b on a.id = b.uid-->
+<!--                 LEFT JOIN role c on b.rid = c.id-->
+<!--    </select>-->
+
+<!--    <select id="selectRelation" resultType="String">-->
+<!--        SELECT user_role.rid-->
+<!--        FROM user_role-->
+<!--        WHERE uid = #{id}-->
+<!--    </select>-->
+
+<!--    <insert id="addUserRoleRelation">-->
+<!--        INSERT INTO user_role (uid, rid)-->
+<!--        VALUES (#{uid}, ${rid});-->
+<!--    </insert>-->
+
+<!--    <insert id="delUserRoleRelation">-->
+<!--       delete from user_role where uid = #{uid}-->
+<!--    </insert>-->
+</mapper>
